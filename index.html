@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+<head>
+	<meta charset="utf-8" />
+    <meta name="description" content="Vélo'V - réservation de vélos en libre service dans Lyon et Villeurbanne" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Vélo'V : Réservez votre vélo dans Lyon"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content="Vélo'V - réservation de vélos en libre service dans Lyon et Villeurbanne"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" /><![endif]-->
+    
+	<title>Vélo'v réservation de vélos - Lyon</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+</head>
+    
+<body>
+	<header>      
+        <h1><em>Vélo'V&emsp;</em>Location de vélos en libre service<em>&emsp;Lyon</em></h1>
+	</header>
+
+	<div id="slider">
+		<div id="slider_container">
+			<img class="slider-image" src="assets/images/01.jpg" alt="photo velo'v">
+			<img class="slider-image" src="assets/images/02.jpg" alt="photo station velo'v">
+			<img class="slider-image" src="assets/images/03.jpg" alt="photo velo'v">
+			<img class="slider-image" src="assets/images/04.jpg" alt="photo utilisateur velo'v">
+		</div>
+        
+		<div id="left" class="fas fa-chevron-circle-left"></div>
+		<div id="right" class="fas fa-chevron-circle-right"></div>
+        <div id="play" class="fas fa-play-circle"></div>
+        <div id="pause" class="fas fa-pause-circle"></div>
+		
+	</div>
+
+	<div id="cont_map">
+
+			<div id="map"></div>
+
+			<div id="details_station">
+				<h2>Détails de la station</h2>
+				<p id="nom">Cliquez sur une station pour afficher ses détails</p>
+				<p id="adresse"></p>
+				<p id="velo"></p>
+				<p id="support"></p>
+				<p id="statut"></p>
+				<input id="btnResa" type="button" value="Réserver">
+                <input id="btnCancel" type="button" value="Annuler la réservation">				
+				<div id="sign">
+					<p>Pour valider la reservation, signez ici : </p>
+                    
+					<canvas id="canvas" width="300" height="80"></canvas>
+                    
+					<br/><input id="btnValid" type="button" value="Valider"><input id="btnClear" type="button" value="Effacer">
+				</div>
+			</div>
+			
+	</div>
+
+	<footer>
+		<p id="etat_resa"></p>
+	</footer>
+    
+	<script async defer src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyDQrfioyrvNIZjlIcq0oTp2J9S-EvXMqYU&callback=Gmap.initializeMap"></script>
+	<script src="assets/js/Main.js"></script>
+	<script src="assets/js/Slider.js"></script>
+	<script src="assets/js/Map.js"></script>
+	<script src="https://cdn.rawgit.com/googlemaps/js-marker-clusterer/gh-pages/src/markerclusterer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script src="assets/js/Reservation.js"></script>
+
+</body>
+</html>
